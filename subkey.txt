@@ -1,0 +1,12 @@
+--> Install
+cargo install --force --git https://github.com/paritytech/substrate subkey
+
+--> Generate a key
+subkey generate -w 24
+
+Secret phrase `bounce tobacco pond lobster celery game view chuckle dawn clog lamp ticket rebuild alter mask bulb list disagree chef bacon market message make debris` is account:
+  Secret seed:      0x82ae6bf364b971ec3aa99ee56a815c79a9297b5aa9141c896618a8f8758379a3
+  Public key (hex): 0xd2bdb23c1f3413d258e76407ba71fc7110cca2fd8d86a4ca98df7a2ea045077a
+  Account ID:       0xd2bdb23c1f3413d258e76407ba71fc7110cca2fd8d86a4ca98df7a2ea045077a
+  SS58 Address:     5Gq2GJ2dGXtkAeRYPJLHbxQVh4gpjLkyBxBiTa6pzoZzXoCo
+
