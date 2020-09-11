@@ -10,3 +10,12 @@ Secret phrase `bounce tobacco pond lobster celery game view chuckle dawn clog la
   Account ID:       0xd2bdb23c1f3413d258e76407ba71fc7110cca2fd8d86a4ca98df7a2ea045077a
   SS58 Address:     5Gq2GJ2dGXtkAeRYPJLHbxQVh4gpjLkyBxBiTa6pzoZzXoCo
 
+
+
+--> Generate y key for kusama
+subkey generate --network kusama -w 24
+Secret phrase `genius fatal bargain train window also addict inch much federal nephew purse mouse stadium include elbow decade inquiry dress chunk cable produce raven short` is account:
+  Secret seed:      0x31f8286607642e9eadaa5044479bb5a0a05a5597cb779e0ebf9f25ec74fe60c7
+  Public key (hex): 0xa6aa83d6128af757301c1ca2dd98c515edcf7cdf44596625429c812d7d2fa418
+  Account ID:       0xa6aa83d6128af757301c1ca2dd98c515edcf7cdf44596625429c812d7d2fa418
+  SS58 Address:     GLr7vXi4YeDYstqHe3mJh4DC2e6b4Zz1yZyywHp52UWz5FP

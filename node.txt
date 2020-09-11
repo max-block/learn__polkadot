@@ -12,6 +12,22 @@ git checkout v0.8.23
 # it's better to do it in tmux, it requires a lot of time
 cargo build --release
 
+--> Install on ubuntu
+# Import the security@parity.io GPG key
+gpg --recv-keys --keyserver hkps://keys.mailvelope.com 9D4B2B6EB8F97156D19669A9FF0812D491B96798
+gpg --export 9D4B2B6EB8F97156D19669A9FF0812D491B96798 > /usr/share/keyrings/parity.gpg
+# Add the Parity repository and update the package index
+echo 'deb [signed-by=/usr/share/keyrings/parity.gpg] https://releases.parity.io/deb release main' > /etc/apt/sources.list.d/parity.list
+apt update
+# Install polkadot
+apt install polkadot
+
+systemctl enable polkadot
+
+# edit /etc/default/polkadot
+# POLKADOT_CLI_ARGS="--pruning=archive --chain=kusama"
+systemctl start polkadot
+
 
 --> Run node
 polkadot --pruning=archive --chain westend
@@ -19,4 +35,7 @@ polkadot --chain westend --validator --name zz3
 docker run --restart=always --name=polkadot -d -p 30333:30333 -p 9933:9933 -p 9934:9934 -v /data/polkadot:/polkadot parity/polkadot:latest --pruning=archive --chain kusama --name "my-node"
 # git access to docker to /data/polkadot dir
 
---> Validator must be synced as archive node, --pruning=archive
+--> Validator must be synced as an archive node, --pruning=archive
+
+--> Get author_rotateKeys
+curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9933

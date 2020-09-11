@@ -1,8 +1,10 @@
 ACTIVE
 
-1) How to run a validator node?
-
 2) What is the difference between a slot and a block?
+
+3) How to calc a fee for a transfer in Polkadot?
 
 
 SOLVED
+
+1) How to run a validator node?
