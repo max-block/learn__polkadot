@@ -4,6 +4,12 @@ ACTIVE
 
 3) How to calc a fee for a transfer in Polkadot?
 
+4) Why do we need a controller account?
+
+5) Are there any security issues to have an unprotected open rpc port on a validator node?
+
+6) Why Sentry node is deprecated?
+
 
 SOLVED
 
